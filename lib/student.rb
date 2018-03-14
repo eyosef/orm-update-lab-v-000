@@ -47,7 +47,7 @@ class Student
       if self.name = row
     end #each iterator
 
-  end
+  end #save method
 
     def self.update
       sql <<-SQL
