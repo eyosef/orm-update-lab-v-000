@@ -59,9 +59,9 @@ class Student
 
   def self.new_from_db(attribute)
     new_student = self.new(attribute[1], attribute[2], attribute[0])
-    new_student.id = attribute[0]
-    new_student.name = attribute[1]
-    new_student.grade = attribute[2]
+    # new_student.id = attribute[0]
+    # new_student.name = attribute[1]
+    # new_student.grade = attribute[2]
     new_student
     # [1, "Pat", 12]
   end
