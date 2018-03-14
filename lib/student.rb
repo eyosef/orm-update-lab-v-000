@@ -63,6 +63,11 @@ class Student
   end
 
   def self.find_by_name
+    dql <<-SQL
+    SELECT *
+    FROM students
+    SQL
+
   end
 
 
