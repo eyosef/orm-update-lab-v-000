@@ -35,7 +35,7 @@ class Student
     new_student = self.new(name, grade)
 
     sql = <<-SQL
-      INSERT students
+      INSERT INTO students (name, grade)
     SQL
   end
 
