@@ -45,7 +45,7 @@ class Student
                   binding.pry
 
     DB[:conn].each do |row|
-      if self.name = row
+      if @id = row[0][0]
         row
       end
 
