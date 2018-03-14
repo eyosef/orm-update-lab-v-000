@@ -60,6 +60,8 @@ class Student
   def self.new_from_db(attribute)
     new_student = self.new
     new_student.id = attribute[0]
+    new_student.name = attribute[1]
+    new_student.grade = attribute[2]
     # [1, "Pat", 12]
   end
 
