@@ -44,7 +44,7 @@ class Student
 
     DB[:conn].each do |row|
       binding.pry
-      #if self.name = row
+      if self.name = row
 
     end #each iterator
 
