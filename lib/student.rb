@@ -63,7 +63,7 @@ class Student
   end
 
   def self.find_by_name
-    dql <<-SQL
+    sql <<-SQL
     SELECT *
     FROM students
     WHERE name = ?
