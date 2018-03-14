@@ -48,7 +48,6 @@ class Student
       if @id = row[0][0]
         row
       end
-
     end #each iterator
 
   end #save method
