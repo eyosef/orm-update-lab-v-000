@@ -51,7 +51,7 @@ class Student
       DB[:conn].execute(sql, self.name, self.grade, self.id)
   end #update method
 
-  def self.create
+  def self.create(name, grade)
     new_student = self.new(name, grade)
   end
 
