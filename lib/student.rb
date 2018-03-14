@@ -12,6 +12,9 @@ class Student
   end
 
   def self.create_table
+
+    sql = <- SQL
+    SQL
   end
 
 
