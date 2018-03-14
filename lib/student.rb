@@ -59,6 +59,7 @@ class Student
 
   def self.new_from_db(attribute)
     binding.pry
+    # [1, "Pat", 12]
   end
 
 
