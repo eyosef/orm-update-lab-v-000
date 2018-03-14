@@ -55,10 +55,8 @@ class Student
         SET name = ?,
         WHERE name = ?
       SQL
-
       DB[:conn].execute(sql, self.name, self.name)
-
-    end
+    end #update method
 
 
   # Remember, you can access your database connection anywhere in this class
