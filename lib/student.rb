@@ -36,10 +36,11 @@ class Student
 
     sql = <<-SQL
       INSERT INTO students (name, grade)
-      VALUES (?, ?, ?)
+      VALUES (?, ?)
     SQL
 
     DB[:conn].execute(sql, name, grade)
+    @id = DB[:conn].execute("SELECT last_insert_rowid() FROM songs")[0][0]
   end
 
 
