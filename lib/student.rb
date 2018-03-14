@@ -43,6 +43,7 @@ class Student
     @id = DB[:conn].execute("SELECT last_insert_rowid() FROM students")[0][0]
 
     DB[:conn].each do |row|
+      binding.pry
       if self.name = row
     end #each iterator
 
