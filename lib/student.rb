@@ -32,6 +32,7 @@ class Student
   end
 
   def save
+    new_student = self.new
   end
 
 
