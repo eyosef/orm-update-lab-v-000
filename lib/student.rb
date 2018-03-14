@@ -50,12 +50,10 @@ class Student
   end #save method
 
     def self.update
-      sql <<-SQL
-        UPDATE students
-        SET name = ?,
-        WHERE name = ?
-      SQL
-      DB[:conn].execute(sql, self.name, self.name)
+
+         sql = "UPDATE songs SET name = ?, album = ? WHERE id = ?"
+         DB[:conn].execute(sql, self.name, self.album, self.id)
+
     end #update method
 
 
