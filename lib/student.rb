@@ -51,9 +51,8 @@ class Student
       DB[:conn].execute(sql, self.name, self.grade, self.id)
   end #update method
 
-
-  # Remember, you can access your database connection anywhere in this class
-  #  with DB[:conn]
+  def self.create 
+  end
 
 
 end #class
