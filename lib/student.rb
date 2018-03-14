@@ -58,6 +58,7 @@ class Student
   end
 
   def self.new_from_db(attribute)
+    binding.pry
   end
 
 
