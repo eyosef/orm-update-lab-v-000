@@ -44,12 +44,6 @@ class Student
       DB[:conn].execute(sql, self.name, self.grade)
       @id = DB[:conn].execute("SELECT last_insert_rowid() FROM students")[0][0]
     end
-    # DB[:conn].each do |row| #FIX
-    #   if @id = row[0][0]
-    #     row
-    #   end
-    # end #each iterator
-
   end #save method
 
     def self.update
