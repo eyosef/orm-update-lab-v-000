@@ -58,7 +58,7 @@ class Student
   end
 
   def self.new_from_db(attribute)
-
+    new_student = self.new
     # [1, "Pat", 12]
   end
 
